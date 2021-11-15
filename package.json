@@ -1,0 +1,19 @@
+{
+  "name": "cinnamon-cinemas-challenge",
+  "version": "1.0.0",
+  "description": "A solution for the Cinnamon Cinemas Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ian-denev/cinnamon-cinemas-kata.git"
+  },
+  "author": "Ian Denev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ian-denev/cinnamon-cinemas-kata/issues"
+  },
+  "homepage": "https://github.com/ian-denev/cinnamon-cinemas-kata#readme"
+}
