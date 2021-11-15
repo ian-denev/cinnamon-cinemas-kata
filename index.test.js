@@ -1,4 +1,6 @@
-const { allocateSeats } = require("./index");
+const { allocateSeats, fillAuditorium } = require("./index");
+const { toBeOneOf } = require("jest-extended");
+expect.extend({ toBeOneOf });
 
 describe("allocateSeats Testing Suite", () => {
     test("requestedSeats is supplied", () => {
@@ -31,5 +33,12 @@ describe("allocateSeats Testing Suite", () => {
         const currentlyTakenSeats = 13;
         const requestedSeats = 3;
         expect(() => allocateSeats(currentlyTakenSeats, requestedSeats)).toThrow("not enough free seats are available");
+    });
+})
+
+describe("fillAuditorium Testing Suite", () => {
+    test("auditorium is filled with 13, 14 or 15 seats", () => {
+        const currentlyTakenSeats = 0;
+        expect(fillAuditorium(currentlyTakenSeats)).toBeOneOf([13, 14, 15]);
     });
 })
