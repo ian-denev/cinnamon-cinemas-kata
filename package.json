@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ian-denev/cinnamon-cinemas-kata#readme",
   "devDependencies": {
-    "jest": "^27.3.1"
+    "jest": "^27.3.1",
+    "jest-extended": "^1.1.0"
   }
 }
